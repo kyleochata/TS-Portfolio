@@ -1,0 +1,24 @@
+@import '../../../index.scss';
+
+.GITouch-btn {
+  background-color: white;
+  border-radius: 5px;
+  color: #000;
+  border: 1px solid #000;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-family: 'Source Sans', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: lightgrey;
+    color: black;
+  }
+  @media (max-width: 768px) {
+    padding: 10px 15px;
+  }
+  @media (max-width: 576px) {
+    padding: 10px 10px;
+  }
+}
