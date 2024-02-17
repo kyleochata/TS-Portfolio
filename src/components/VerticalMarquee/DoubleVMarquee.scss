@@ -1,0 +1,40 @@
+.vertical-marquee-container {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.top-to-bottom,
+.bottom-to-top {
+  width: 45%;
+  overflow: hidden;
+  // position: relative;
+  margin: 0 5px;
+}
+
+.top-to-bottom img,
+.bottom-to-top img {
+  width: 100%;
+  display: block;
+  height: auto;
+  // position: absolute;
+  animation: marquee 10s linear infinite;
+}
+
+.top-to-bottom img {
+  animation-direction: normal;
+}
+
+.bottom-to-top img {
+  animation-direction: reverse;
+}
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
