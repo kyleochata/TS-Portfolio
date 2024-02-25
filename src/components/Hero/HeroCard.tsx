@@ -13,7 +13,7 @@ const HeroCard = () => {
         </h2>
         <p className="hc-text">
           With expertise in front-end development, I create engaging and
-          user-friendly websites that leave a <strong>bold</strong> impression
+          user-friendly websites that leave a <strong>bold</strong> impression.
         </p>
         <div className="hc-btn-container">
           <ResumeBtn />

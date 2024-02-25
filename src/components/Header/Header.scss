@@ -1,0 +1,48 @@
+@import '../../index.scss';
+@import '../../colors.scss';
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $offwhite;
+  border-bottom: solid 1px grey;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  // padding-top: 10px;
+  width: 100%;
+  max-height: 100px;
+}
+.h-maxSize {
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw; //ensure the container will take up most of the space
+}
+.h-logo {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  img {
+    height: auto;
+    max-height: 100px;
+    width: 100%;
+  }
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  li a {
+    text-decoration: none;
+    font-family: 'Source Sans', sans-serif;
+    font-size: 30px;
+    color: black;
+  }
+}

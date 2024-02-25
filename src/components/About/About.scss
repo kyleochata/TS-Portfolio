@@ -1,0 +1,57 @@
+@import '../../index.scss';
+@import '../../colors.scss';
+
+.a-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 20px 0;
+  // border: 1px solid $black;
+}
+.a-i-container {
+  padding: 20px;
+  margin: 20px;
+  background: linear-gradient(45deg, $yellow, $white, $blue, $white, $yellow);
+  border: 1px solid $black;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  img {
+    width: 85%;
+    height: 80%;
+    border-radius: 10px;
+  }
+}
+.a-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 20px;
+  // background-color: $white;
+  // border: 1px solid $black;
+  width: 50%;
+  color: $black;
+  border-radius: 5px;
+  line-height: 1.5;
+
+  h2 {
+    color: $black;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+  }
+  p {
+    color: $black;
+    font-family: 'Source Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.75px;
+    margin: 10px 0 20px 0;
+  }
+  h4 {
+    color: $lightgray;
+    letter-spacing: 0.5px;
+  }
+}

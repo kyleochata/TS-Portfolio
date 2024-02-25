@@ -1,8 +1,9 @@
 @import '../../../index.scss';
+@import '../../../colors.scss';
 .resume-btn {
-  background-color: grey;
+  background-color: $red;
   border-radius: 5px;
-  color: #000;
+  color: $yellow;
   border: 1px solid #000;
   padding: 10px;
   font-size: 1.2rem;
@@ -12,8 +13,9 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   &:hover {
-    background-color: #000;
-    color: #f5f5f5;
+    // background-color: $blue;
+    color: $yellow;
+    transform: scale(1.1);
   }
   @media (max-width: 768px) {
     padding: 10px 15px;
