@@ -1,0 +1,48 @@
+@import '../../index.scss';
+@import '../../colors.scss';
+.at-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border: 1px solid $black;
+  border-radius: 5px;
+  height: 160px;
+  background-color: white;
+  img {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+  }
+  @media (max-width: 907px) {
+    height: auto;
+  }
+}
+.at-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 907px) {
+    display: none;
+  }
+}
+.atl-a {
+  font-size: 18px;
+  font-family: 'Montserrat Bold', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: start;
+  padding: 10px;
+  text-decoration: none;
+  color: $black;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.at-title {
+  padding: 10px;
+  margin: 0;
+}

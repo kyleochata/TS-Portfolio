@@ -1,0 +1,95 @@
+@import '../../index.scss';
+@import '../../colors.scss';
+.t-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.t-top-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.t-tl-title {
+  color: $lightgray;
+  text-align: start;
+  width: 100%;
+}
+.t-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  h2 {
+    color: $black;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+  }
+}
+.t-top-p {
+  font-family: 'Source Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.75px;
+  max-width: 45%;
+}
+.t-bot-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  background-color: transparent;
+}
+.tb-sub-title {
+  color: $black;
+  font-weight: 400;
+  font-family: 'Montserrat-Bold', sans-serif;
+  margin: 10px;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  text-align: center;
+}
+.t-tc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  // gap: 20px;
+  margin: 20px 0;
+}
+.tb-al-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  background: white;
+  transition: 1s linear;
+  //border: 1px solid $black;
+}
+.tb-al-container:has(.at-container[data-color='blue']:hover) {
+  background: $blue;
+}
+.tb-al-container:has(.at-container[data-color='black']:hover) {
+  background: $black;
+}
+.tb-al-container:has(.at-container[data-color='D3']:hover) {
+  background: linear-gradient(to top right, #f89d42, #f79144, #ce664f);
+}
+.tb-al-container:has(.at-container[data-color='purple']:hover) {
+  background: #8063a6;
+}
+.tb-al-container:has(.at-container[data-color='pink']:hover) {
+  background: pink;
+}
+.tb-al-container:has(.at-container[data-color='orange']:hover) {
+  background: #f8541c;
+}
+.tb-al-container:has(.at-container[data-color='green']:hover) {
+  background: #85bc71;
+}
