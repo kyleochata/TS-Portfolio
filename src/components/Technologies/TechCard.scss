@@ -1,0 +1,41 @@
+@import '../../index.scss';
+@import '../../colors.scss';
+
+.tc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 5px;
+  width: 24%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 400px;
+  min-width: 200px;
+}
+.tc-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    text-align: start;
+    padding: 10px;
+    font-family: 'Source Sans', sans-serif;
+  }
+}
+.tc-title {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: start;
+  padding: 10px;
+}

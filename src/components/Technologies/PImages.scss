@@ -1,0 +1,12 @@
+.pi-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 0;
+  max-height: 200px;
+  img {
+    max-width: 200px;
+    height: 200px;
+  }
+}
