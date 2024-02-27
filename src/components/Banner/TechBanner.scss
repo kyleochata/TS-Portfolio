@@ -1,0 +1,56 @@
+@import '../../index.scss';
+@import '../../colors.scss';
+
+.tb-container {
+  background: linear-gradient(45deg, $blue, $white);
+  width: 100%;
+  min-height: 500px;
+  height: 50vh;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tb-icontainer {
+  color: $black;
+  padding: 20px 15px;
+  z-index: 2;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 $black;
+}
+.tb-title {
+  font-size: 42px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 0;
+}
+.tb-subtitle {
+  font-size: 24px;
+  font-family: 'Source Sans', sans-serif;
+  margin-top: 10px;
+}
+.tb-content {
+  font-family: 'Source Sans', sans-serif;
+  font-size: 18px;
+}
+.tb-btn {
+  padding: 10px;
+  font-family: 'Source Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+
+  margin: 10px 0 20px 0;
+  border: none;
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+  &:hover {
+    background-color: $red;
+    color: $white;
+    transform: scale(1.1);
+    border: 1px solid $black;
+    border-radius: 10px;
+  }
+}
