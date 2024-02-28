@@ -3,7 +3,6 @@ import './TechBanner.scss'
 const TechBanner = () => {
   return (
     <section className="tb-container">
-      <div className="screen-overlay"></div>
       <Container>
         <div className="tb-icontainer">
           <h1 className="tb-title">Don't see your technology?</h1>
