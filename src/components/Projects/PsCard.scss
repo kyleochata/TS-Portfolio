@@ -1,0 +1,187 @@
+@import '../../index.scss';
+@import '../../colors.scss';
+
+.ps-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  width: 90%;
+  box-shadow: 0 15px 35px $white, 0 5px 15px lightgray;
+  border-radius: 0 20px 20px;
+}
+// .ps-i-container {
+//   width: 100%;
+//   height: 300px;
+//   margin-bottom: 10px;
+//   filter: grayscale(0.6);
+//   transition: 0.5s ease;
+// }
+
+.ps-i-container {
+  position: relative; /* Set position to relative */
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  filter: grayscale(0.3);
+  transition: 0.5s ease;
+  overflow: hidden; /* Hide overflow */
+}
+
+.ps-i-container:hover .ps-i-overlay {
+  /* Apply styles when hovering ps-i-container */
+  transform: translateY(0%);
+}
+
+.ps-i-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 10px;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.5s ease; /* Transition for smooth animation */
+}
+
+.ps-i-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff; /* Text color */
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.ps-i-click {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff; /* Text color */
+  font-size: 0.9rem;
+  opacity: 0.7; /* Adjust opacity */
+}
+
+.ps-i {
+  height: 100%;
+  width: 100%;
+}
+.ps-c-bot {
+  margin: 0 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.ps-c-tags {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.ps-c-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1px solid $red;
+  background-color: $red;
+  color: $white;
+  cursor: pointer;
+  transition: 0.5s ease;
+  &:hover {
+    font-size: 1.3rem;
+    transform: scale(1.1);
+  }
+}
+.ps-c-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin: 20px 0;
+  font-weight: 600;
+  color: $black;
+}
+.ps-c-desc,
+.ps-c-rdesc {
+  font-family: 'Source Sans ', sans-serif;
+
+  line-height: 1.4;
+  margin: 0 0 20px 0;
+}
+.ps-c-desc {
+  font-size: 18px;
+}
+.ps-c-rdesc {
+  font-size: 16px;
+}
+.ps-c-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 600;
+  color: $black;
+}
+.ps-c-roles {
+  font-family: 'Source Sans ', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  letter-spacing: 1px;
+  color: #7ebdc2;
+  filter: grayscale(0.3);
+}
+
+.ps-t-span {
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: default;
+  // filter: grayscale(0.2);
+}
+.Mongo {
+  background-color: #13aa52;
+  color: $white;
+}
+.Express {
+  background-color: #000;
+  color: $white;
+}
+.React {
+  background-color: #61dbfb;
+  color: $black;
+}
+.Node {
+  background-color: #3c873a;
+  color: $white;
+}
+.D3 {
+  background: linear-gradient(to top right, #f89d42, #f79144, #ce664f);
+  color: $white;
+}
+.HTML,
+.Handlebars {
+  background-color: #f06529;
+  color: $white;
+}
+.CSS {
+  background-color: #2965f1;
+  color: $white;
+}
+.JavaScript {
+  background-color: #f0db4f;
+  color: $black;
+}
+.Axios {
+  background-color: #00a0d1;
+  color: $white;
+}
+.MySQL {
+  background-color: $blue;
+  color: $black;
+}

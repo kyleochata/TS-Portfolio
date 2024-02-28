@@ -18,7 +18,7 @@ import TailWindlogo from '../assets/images/resized/tilwindlogo.png'
 import Gitlogo from '../assets/images/git.png'
 import BootstrapLogo from '../assets/images/resized/bootstraplogo.svg'
 import Gologo from '../assets/images/resized/Gologo.svg'
-
+import WillDoImg from '../assets/images/resized/willdopc.png'
 export const techs = [
   {
     name: 'MongoDB',
@@ -166,5 +166,48 @@ export const allTechs = [
     image: NodeLogo,
     link: 'https://nodejs.org/',
     color: 'green',
+  },
+]
+import BbcImage from '../assets/images/resized/brainbalancecompanion.png'
+import HelpDeskImage from '../assets/images/resized/helpdesk.png'
+export const projects = [
+  {
+    title: 'Will-Do: Crush. Your. Goals.',
+    tags: ['Mongo', 'Express', 'React', 'Node', 'D3'],
+    image: WillDoImg,
+    description:
+      "Will-Do is a goal setting and tracking application that allows users to set, track, and visualize their goals. Users can create goals, set milestones, and track their progress. The application also provides a visualization of the user's progress/data using D3.js.",
+    roles: 'Full Stack Developer, Lead Architect.',
+    rolesDesc:
+      "As the Lead Architect of this project, I was responsible for the overall structure and functionality of the application. This required close collaboration with the designers to understand the user's needs and the best way to implement them. Once the structure was in place, I was responsible for delegation of roles to the developers. Apart from the architecture, I was also responsible for both the front and back-end for implementation of the D3.js library.",
+    teamSize: '4+',
+    year: '2023',
+    srcLink: 'https://github.com/kyleochata/Will-DO-Crush-your-goals',
+  },
+  {
+    title: 'Brain Balance Companion',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Axios'],
+    image: BbcImage,
+    description:
+      "A web application built for a client that is a subscriber to Brain Balance. The application allows the client to track their child's progress in a more user-friendly way. The application tracks the child's activities for the week as well as provides videos on Brain Balance's Youtube channel for reference.",
+    roles: 'Front End Developer',
+    rolesDesc:
+      "My role as a front end developer was to develop the functionality of the user interface based off the client's needs. This required close collaboration with the client to understand their needs and the best way to implement them. I was also responsible for the implementation of the Axios library to make API calls to the google sheet that contained the child's activities for the duration of the program.",
+    teamSize: '3',
+    year: '2023',
+    srcLink: 'https://github.com/kyleochata/Brain_Balance_Companion',
+  },
+  {
+    title: 'I.T Help Desk',
+    tags: ['Handlebars', 'MySQL', 'Express', 'Node', 'CSS'],
+    image: HelpDeskImage,
+    description:
+      "A web application that allows users to submit and track their I.T. requests. A key feature is the ability of the I.T department to communicate with the user in real-time through the application. Views for this project vary depending on the user's role. Please see the README for more information.",
+    roles: 'Lead Architect, Full Stack Developer',
+    rolesDesc:
+      "As the Lead Architect of this project, I was responsible for bringing the client's vision to life. This required close collaboration with the client to understand their needs and the best way to implement them. This required close coordination for the development team. Apart from the architecture, I was also responsible for contributing to the front and back-end development, with a focus on the front-end animations and functionality.",
+    teamSize: '4',
+    year: '2023',
+    srcLink: 'https://github.com/kyleochata/Hammer-Help-Desk',
   },
 ]
