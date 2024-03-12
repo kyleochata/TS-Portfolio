@@ -2,7 +2,7 @@ import './GitHBanner.scss'
 
 const GitHBanner = () => {
   return (
-    <section className="gh-banner">
+    <section className="gh-banner-home">
       <a
         href="https://github.com/kyleochata"
         target="_blank"
