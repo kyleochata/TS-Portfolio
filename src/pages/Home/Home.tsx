@@ -6,6 +6,7 @@ import Technologies from '../../components/Technologies/Technologies'
 import TechBanner from '../../components/Banner/TechBanner'
 import Projects from '../../components/Projects/Projects'
 import GitHBanner from '../../components/Banner/GitHBanner'
+import Footer from '../../components/Footer/Footer'
 const Home = () => {
   return (
     <>
@@ -20,6 +21,7 @@ const Home = () => {
         <Projects />
       </Container>
       <GitHBanner />
+      <Footer />
     </>
   )
 }

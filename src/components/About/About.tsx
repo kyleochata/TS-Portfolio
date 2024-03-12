@@ -3,7 +3,7 @@ import GetInTouchBtn from '../Buttons/GetInTouchBtn/GetInTouchBtn'
 import './About.scss'
 const About = () => {
   return (
-    <section className="a-container">
+    <section className="a-container" id="about">
       <div className="a-i-container">
         <img src={ProfileImg} alt="Profile" />
       </div>

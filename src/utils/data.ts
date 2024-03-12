@@ -19,6 +19,7 @@ import Gitlogo from '../assets/images/git.png'
 import BootstrapLogo from '../assets/images/resized/bootstraplogo.svg'
 import Gologo from '../assets/images/resized/Gologo.svg'
 import WillDoImg from '../assets/images/resized/willdopc.png'
+import HappyPawsImg from '../assets/images/ProjectCards/HappyPaws.png'
 export const techs = [
   {
     name: 'MongoDB',
@@ -32,7 +33,7 @@ export const techs = [
     image: ExpressLogo,
   },
   {
-    name: 'React.js',
+    name: 'React & React-Native',
     description: 'A JavaScript library for building user interfaces.',
     image: ReactLogo,
   },
@@ -172,12 +173,25 @@ import BbcImage from '../assets/images/resized/brainbalancecompanion.png'
 import HelpDeskImage from '../assets/images/resized/helpdesk.png'
 export const projects = [
   {
+    title: 'Happy Paws',
+    tags: ['React-Native', 'TypeScript', 'Expo'],
+    image: HappyPawsImg,
+    description:
+      'Happy Paws is a mobile application that allows users to book pet services such as grooming, boarding, and walking. The application was developed as a landing page for the Happy Paws Company and as a form of communication with their target audience. This project is still under development.',
+    roles: 'Mobile Developer.',
+    rolesDesc:
+      'As a mobile developer on this project, my responsibilities included the development of the user interface and the functionality of the application. This required close collaboration with the client and designer to understand their needs and the best way to implement them. I was also responsible for the implementation of the Expo library to build the application. When viewing the project, please note that the application is still under development. The develop branch is the most up to date.',
+    teamSize: '2',
+    year: '2024',
+    srcLink: 'https://github.com/kyleochata/Happy-Paws/tree/develop',
+  },
+  {
     title: 'Will-Do: Crush. Your. Goals.',
     tags: ['Mongo', 'Express', 'React', 'Node', 'D3'],
     image: WillDoImg,
     description:
       "Will-Do is a goal setting and tracking application that allows users to set, track, and visualize their goals. Users can create goals, set milestones, and track their progress. The application also provides a visualization of the user's progress/data using D3.js.",
-    roles: 'Full Stack Developer, Lead Architect.',
+    roles: 'Lead Architect, Full Stack Developer.',
     rolesDesc:
       "As the Lead Architect of this project, I was responsible for the overall structure and functionality of the application. This required close collaboration with the designers to understand the user's needs and the best way to implement them. Once the structure was in place, I was responsible for delegation of roles to the developers. Apart from the architecture, I was also responsible for both the front and back-end for implementation of the D3.js library.",
     teamSize: '4+',

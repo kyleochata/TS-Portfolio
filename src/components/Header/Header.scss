@@ -16,9 +16,9 @@ header {
 .h-maxSize {
   max-width: 1280px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 80vw; //ensure the container will take up most of the space
+  width: 100vw; //ensure the container will take up most of the space
 }
 .h-logo {
   display: flex;
@@ -28,6 +28,8 @@ header {
     height: auto;
     max-height: 100px;
     width: 100%;
+    min-height: 50px;
+    min-width: 150px;
   }
 }
 
@@ -44,5 +46,10 @@ nav ul {
     font-family: 'Source Sans', sans-serif;
     font-size: 30px;
     color: black;
+  }
+}
+.about-nav {
+  @media (max-width: 606px) {
+    display: none;
   }
 }
