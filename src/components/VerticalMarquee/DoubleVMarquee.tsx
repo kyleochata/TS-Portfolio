@@ -2,10 +2,14 @@ import React from 'react'
 import './DoubleVMarquee.scss'
 
 interface VerticalMarqueeProps {
-  images: string[] // or React.ReactNode[] if passing image components
+  images: string[]
+  secondImages: string[]
 }
 
-const VerticalMarquee: React.FC<VerticalMarqueeProps> = ({ images }) => {
+const VerticalMarquee: React.FC<VerticalMarqueeProps> = ({
+  images,
+  secondImages,
+}) => {
   return (
     <div className="vertical-marquee-container">
       <div className="top-to-bottom">
@@ -14,7 +18,7 @@ const VerticalMarquee: React.FC<VerticalMarqueeProps> = ({ images }) => {
         ))}
       </div>
       <div className="bottom-to-top">
-        {images.map((imageUrl, index) => (
+        {secondImages.map((imageUrl, index) => (
           <img key={index} src={imageUrl} alt={`Image ${index + 1}`} />
         ))}
       </div>

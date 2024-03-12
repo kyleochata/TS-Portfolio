@@ -1,0 +1,62 @@
+@import '../../index.scss';
+@import '../../colors.scss';
+
+.footer {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+}
+.f-container {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  @media (max-width: 1279px) {
+    padding: 0 20px;
+  }
+}
+.f-i-container {
+  margin: 0;
+  img {
+    height: 50px;
+    width: 150px;
+  }
+}
+.f-t-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.f-r-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 50%;
+  margin: 20px 0;
+}
+.f-r-ic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 200px;
+}
+
+.f-r-btn {
+  background-color: transparent;
+  border: none;
+  color: $black;
+  font-size: 20px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.f-text {
+  color: $black;
+}

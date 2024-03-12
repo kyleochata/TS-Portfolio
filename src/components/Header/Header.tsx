@@ -1,5 +1,6 @@
 import Logo from '../../assets/images/resized/BlueLogo1.png'
 import ResumeBtn from '../Buttons/ResumeBtn/ResumeBtn'
+import { scrollToTop } from '../../utils/helpers'
 import './Header.scss'
 
 const Header = () => {
@@ -7,18 +8,15 @@ const Header = () => {
     <header>
       <div className="h-maxSize">
         <div className="h-logo">
-          <img src={Logo} alt="Kyle Etrata Logo" />
+          <img src={Logo} alt="Kyle Etrata Logo" onClick={scrollToTop} />
         </div>
         <nav>
           <ul>
-            <li>
+            <li className="about-nav">
               <a href="/">Home</a>
             </li>
-            <li>
+            <li className="about-nav">
               <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
             </li>
             <li>
               <ResumeBtn />
